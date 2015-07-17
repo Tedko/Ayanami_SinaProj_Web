@@ -20,11 +20,10 @@
             }
         });
 
-        // 使用
         require(
             [
                 'echarts',
-                'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/line'
             ],
             function(ec) {
                 var myChart = ec.init(document.getElementById('line'));
@@ -207,7 +206,7 @@
                                 color: 'rgba(0,0,0,0)'
                             }
                         },
-                        data: [0, 900, 1245, 1530, 1376, 1376, 1511, 1689, 1856, 1495, 1292]
+                        data: [4608, 4491, 4196, 4413, 4250, 3973]
                     }, {
                         name: '涨',
                         type: 'bar',
